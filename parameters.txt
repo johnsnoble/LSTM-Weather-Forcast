@@ -1,0 +1,1 @@
+temperature_2m (°C),relativehumidity_2m (%),dewpoint_2a (°C),surface_pressure (hPa),precipitation (mm),cloudcover (%),direct_normal_irradiance (W/m²),windspeed_100m (km/h),winddirection_100m (°),vapor_pressure_deficit (kPa),
