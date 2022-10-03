@@ -59,9 +59,11 @@ for i in range(2):
 
 def plot_predictions(model,x,y,start=0,end=500000):
   predictions = model.predict(x[start:end])
-  for i in range(2):
-    plt.plot(predictions[:,i])
-    plt.plot(y[start:end][:,i])
+  plt.plot(predictions[:,0],label="temperature prediction")
+  plt.plot(y[start:end][:,0],label="actual temperature")
+  plt.plot(predictions[:,1],label="precipitation prediction")
+  plt.plot(y[start:end][:,1],label="actual precipitaion")
+  plt.legend()
   plt.show()
 
 model = keras.models.load_model("model1/")
